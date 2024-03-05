@@ -22,7 +22,7 @@
     margin: auto;
     /* min-width: 992px; */
     max-width: 1200px;
-    padding: 40px 20px;
+    padding: 40px 20px 0;
 }
 a{
     text-decoration: none;
@@ -35,8 +35,8 @@ a{
     justify-content: center;
 }
 .description{
-    color: #131318e1;
-    padding-block: 30px;
+    color: #131318bd;
+    padding-top: 20px;
     line-height: 25px;
 }
 .btn{
@@ -44,6 +44,13 @@ a{
     color: white;
     font-weight: 700;
     font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 12px 28px;
+}
+.btn:active{
+    background-color: #df4c03;
 }
 
 /* nav section */
@@ -79,16 +86,17 @@ a{
     border-radius: 20px;
 }
 .shad h1{
-    font-size: 50px;
+    font-size: 60px;
     color: white;
 }
 .shad p{
-    width: 50%;
-    color: white;
+    width: 55%;
+    color: rgba(255, 255, 255, 0.76);
 }
 .search-section{
     background-color: #ffffff79;
     padding: 20px;
+    margin-top: 30px;
     border-radius: 10px;
     gap: 15px;
 }
@@ -109,12 +117,6 @@ a{
     width: 180px;
     justify-content: center;
     gap: 10px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
-.search-section .btn:active{
-    background-color: #df4c03;
 }
 .search-section .btn svg{
     height: 40%;
@@ -123,9 +125,41 @@ a{
 }
 
 
+/* Popular section */
+.popular{
+    width: 100%;
+    padding-block: 20px;
+    justify-content: space-between;
+}
+.left{
+    width: 50%;
+}
+.list {
+    display: flex;
+    gap: 15px;
+    padding-left: 8px;
+}
+.dot{
+    padding: 4px;
+    background-color: #ff5400;
+    margin-top: 8px;
+}
+.left .btn{
+    margin-block: 20px;
+}
+.right{
+    width: 48%;
+}
+.right img{
+    width: 100%;
+}
 
 
 
+.footer{
+    height: 50vh;
+    border: 1px solid tomato;
+}
 /* Responsibe section */
 
 /* Mobile section */
@@ -169,6 +203,12 @@ a{
     .search-section .btn{
         width: 100%;
     }
+    .popular{
+        flex-direction: column;
+    }
+    .left, .right{
+        width: 100%;
+    }
 }
 
 
@@ -198,5 +238,19 @@ a{
     }
     .search-section .btn{
         width: 48%;
+    }
+    .popular{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+        height: 500px;
+    }
+    .right img{
+        height: 100%;
+        border-radius: 20px;
     }
 }
