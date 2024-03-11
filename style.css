@@ -20,7 +20,6 @@
 }
 .container{
     margin: auto;
-    /* min-width: 992px; */
     max-width: 1200px;
     padding: 40px 20px 0;
 }
@@ -245,6 +244,82 @@ a{
 }
 
 
+/* Optional section */
+.op{
+    background: linear-gradient(to right,rgba(157, 222, 248, 0.979), #ff925cbd);
+}
+.op .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 40px;
+}
+.container .le{
+    width: 50%;
+}
+
+
+/* Newsletter section */
+.newsletter{
+    width: 100%;
+    gap: 20px;
+
+}
+.l{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 40px;
+    border: 1px solid #ff5400;
+    border-radius: 15px;
+}
+.l hr{
+    opacity: 0.2;
+}
+.l .description{
+    padding-top: 0;
+}
+.l input{
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #e2e1e167;
+    outline: none;
+    background-color: #e2e1e15e;
+}
+.l input:focus{
+    border: 1px solid #ff5400;
+}
+.r{
+    width: 60%;
+    height: 380px;
+    background-image: url(Images/Rectangle\ 8\ \(1\).png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    position: relative;
+}
+.off{
+    color: white;
+    background-color: #ff5400;
+    font-weight: 700;
+    font-size: 1.75rem;
+    text-align: center;
+    width: 280px;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 45px;
+    right: 15px;
+    transform: rotate(-20deg);
+}
+.off .light{
+    font-weight: 400;
+    font-size: 1.25rem;
+    padding-bottom: 5px;
+}
+
+
 
 
 .footer{
@@ -322,6 +397,22 @@ a{
     .div{
         width: 100%;
     }
+    .newsletter{
+        flex-direction: column;
+    }
+    .l{
+        width: 100%;
+    }
+    .r{
+        width: 100%;
+    }
+    .off{
+        font-size: 1.25rem;
+        width: 230px;
+    }
+    .off .light{
+        font-size: 1rem;
+    }
 }
 
 
@@ -366,5 +457,14 @@ a{
         height: 100%;
         border-radius: 20px;
     }
-    
+    .newsletter{
+        flex-direction: column;
+    }
+    .l{
+        width: 100%;
+        padding: 40px 90px;
+    }
+    .r{
+        width: 100%;
+    }
 }
