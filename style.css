@@ -243,16 +243,63 @@ a{
     width: 100%;
 }
 
+/* Explore Bangladesh */
+.explore{
+    padding-block: 40px;
+}
+.explore .description{
+    width: 60%;
+    padding-bottom: 20px;
+}
+.cities{
+    gap: 20px;
+    width: 100%;
+    padding-top: 20px;
+}
+.cities .im1{
+    background-image: url(Images/Coxs_Bazar.avif);
+}
+.cities .im2{
+    background-image: url(Images/Sylhet.avif);
+}
+.cities .im3{
+    background-image: url(Images/Chittagong.avif);
+}
+.cities .im4{
+    background-image: url(Images/Kuakata.avif);
+}
+.cities .im{
+    width: 25%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    transition: all .5s;
+}
+.cities .im:hover{
+    transform: scale(1.1);
+}
+.cities .im div{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
 
 /* Optional section */
 .op{
     background: linear-gradient(to right,rgba(157, 222, 248, 0.979), #ff925cbd);
+    margin-block: 50px;
 }
 .op .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 80px 40px;
+    gap: 20px;
 }
 .container .le{
     width: 50%;
@@ -320,13 +367,38 @@ a{
 }
 
 
-
-
-.footer{
-    height: 50vh;
-    border: 1px solid tomato;
+/* Footer section */
+footer{
+    background-color: #d4d4d45d;
+    margin-top: 80px;
 }
-/* Responsibe section */
+footer .container{
+    padding-block: 80px;
+    gap: 25px;
+    width: 100%;
+}
+footer .container .description{
+    padding: 0;
+    width: 75%;
+    text-align: center;
+}
+.container .icons{
+    gap: 20px;
+}
+.icons img{
+    opacity: 0.6;
+}
+.icons img:hover{
+    opacity: 1;
+    scale: 1.2;
+}
+footer .container hr{
+    width: 80%;
+    opacity: 0.4;
+}
+
+
+/* Responsible section */
 
 /* Mobile section */
 
@@ -397,6 +469,32 @@ a{
     .div{
         width: 100%;
     }
+    .explore{
+        padding: 0;
+    }
+    .explore .bold{
+        font-size: 1.5rem;
+    }
+    .explore .description{
+        width: 100%;
+    }
+    .cities{
+        flex-wrap: wrap;
+    }
+    .cities .im{
+        width: 100%;
+    }
+    .op .container{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .container .le{
+        width: 100%;
+        text-align: center;
+    }
+    .container .le .bold{
+        font-size: 1.5rem;
+    }
     .newsletter{
         flex-direction: column;
     }
@@ -456,6 +554,12 @@ a{
     .right img{
         height: 100%;
         border-radius: 20px;
+    }
+    .cities{
+        flex-wrap: wrap;
+    }
+    .cities .im{
+        width: 48%;
     }
     .newsletter{
         flex-direction: column;
