@@ -47,6 +47,7 @@ a{
     border-radius: 8px;
     cursor: pointer;
     padding: 12px 28px;
+    transition: all 0.2s;
 }
 .btn:active{
     background-color: #df4c03;
@@ -165,6 +166,10 @@ a{
 .destination h2{
     color: white;
     cursor: pointer;
+    transition: all .5s;
+}
+.destination h2:hover{
+    transform: scale(1.1);
 }
 .images{
     width: 100%;
@@ -206,6 +211,10 @@ a{
     background-size: cover;
     height: 290px;
     border-radius: 20px;
+    transition: all .5s;
+}
+.img:hover{
+    transform: scale(1.05);
 }
 
 
