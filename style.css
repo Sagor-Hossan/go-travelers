@@ -119,9 +119,8 @@ a{
     gap: 10px;
 }
 .search-section .btn svg{
-    height: 40%;
+    height: 70%;
     fill: white;
-
 }
 
 
@@ -153,6 +152,98 @@ a{
 .right img{
     width: 100%;
 }
+
+
+/* Your Destination section */
+.destination{
+    padding-block: 20px;
+    text-align: center;
+}
+.destination p{
+    width: 60%;
+    padding-bottom: 30px;
+}
+.destination h2{
+    color: white;
+    cursor: pointer;
+}
+.images{
+    width: 100%;
+    gap: 20px;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.bg1{
+    background: url(Images/Rectangle\ 1.png);
+    width: 50%;
+}
+.bg2{
+    background: url(Images/Rectangle\ 2.png);
+    width: 50%;
+}
+.bg3{
+    background: url(Images/Rectangle\ 3.png);
+    width: 35%;
+}
+.bg4{
+    background: url(Images/Rectangle\ 4\ \(2\).png);
+    width: 40%;
+}
+.bg5{
+    background: url(Images/Rectangle\ 5.png);
+    width: 25%;
+}
+.bg6{
+    background: url(Images/Rectangle\ 6.png);
+    width: 45%;
+}
+.bg7{
+    background: url(Images/Rectangle\ 7.png);
+    width: 55%;
+}
+
+.img{
+    background-position: center;
+    background-size: cover;
+    height: 290px;
+    border-radius: 20px;
+}
+
+
+/* Why Choose Us section */
+.chooseUs p{
+    width: 60%;
+    text-align: center;
+}
+.cards{
+    gap: 20px;
+    width: 100%;
+    padding-block: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.div{
+    padding: 30px;
+    border-radius: 20px;
+    width: 48%;
+}
+.div1{
+    border: 1px solid #FBB56342;
+}
+.div2{
+    border: 1px solid #29cdf642;
+}
+.div3{
+    border: 1px solid #e9444442;
+}
+.div img{
+    padding-bottom: 20px;
+}
+.div p{
+    text-align: left;
+    width: 100%;
+}
+
 
 
 
@@ -205,8 +296,30 @@ a{
     }
     .popular{
         flex-direction: column;
+        padding: 0;
     }
     .left, .right{
+        width: 100%;
+    }
+    .destination{
+        padding-block: 0;
+    }
+    .destination h1{
+        font-size: 1.5rem;
+    }
+    .destination p{
+        width: 100%;
+    }
+    .images{
+        flex-direction: column;
+    }
+    .img{
+        width: 100%;
+    }
+    .chooseUs p{
+        width: 100%;
+    }
+    .div{
         width: 100%;
     }
 }
@@ -253,4 +366,5 @@ a{
         height: 100%;
         border-radius: 20px;
     }
+    
 }
