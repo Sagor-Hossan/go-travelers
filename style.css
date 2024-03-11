@@ -511,6 +511,9 @@ footer .container hr{
     .off .light{
         font-size: 1rem;
     }
+    footer .container{
+        padding-block: 40px;
+    }
 }
 
 
